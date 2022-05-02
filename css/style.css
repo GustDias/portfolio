@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -36,10 +34,6 @@ a {
 img {
     max-width: 100%;
     height: auto;
-}
-
-.section {
-    padding: 2rem 0 4rem;
 }
 
 .section-subtitulo {
@@ -97,13 +91,25 @@ img {
     cursor: pointer;
 }
 
+.home {
+    background-color: #EEEEEE;
+}
+
+.homebotao {
+    color: #161616;
+}
+
+.home-titulo {
+    color: #161616;
+}
+
 .home-container {
     gap: 1rem;
+    height: 100vh;
 }
 
 .home-content {
     grid-template-columns: .5fr 3fr;
-    padding-top: 3.5rem;
     align-items: center;
 }
 
@@ -119,7 +125,7 @@ img {
 }
 
 .home-social-icon:hover {
-    color: #fff;
+    color: #161616;
 }
 
 .home-blob {
@@ -139,15 +145,20 @@ img {
 
 .home-subtitulo {
     margin-bottom: .75rem;
+    color: #161616;
 }
 
 .home-descricao {
     margin-bottom: 2rem;
+    color: #161616;
+}
+
+.botaohome:hover .botao-icon {
+    transform: translateX(.5rem);
 }
 
 .botao {
     display: inline-flex;
-    background-color: #161616;
     border: 2px solid #F50057;
     color: #fff;
     padding: 1rem;
@@ -172,7 +183,7 @@ img {
     margin-bottom: 3.5rem;
 }
 
-.sobre-data {
+.sobre {
     text-align: center;
 }
 
@@ -185,6 +196,18 @@ img {
 .sobre-botao {
     display: flex;
     justify-content: center;
+}
+
+.sobrebotao:hover .botao-icon {
+    transform: translateY(.5rem);
+}
+
+.skills {
+    background-color: #EEEEEE;
+}
+
+.skills-titulo {
+    color: #161616;
 }
 
 .skills-container {
@@ -236,7 +259,15 @@ img {
 }
 
 .portfolio-botao:hover .botao-icon {
-    transform: translateX(.75rem);
+    transform: translateX(.5rem);
+}
+
+.contato {
+    background-color: #EEEEEE;
+}
+
+.contato-titulo, .contato-subtitulo {
+    color: #161616;
 }
 
 .contato-container {
@@ -256,7 +287,6 @@ img {
 }
 
 .contato-content {
-    background-color:#161616;
     border-radius: .5rem;
     padding: .75rem 1rem .25rem;
 }
@@ -285,12 +315,11 @@ img {
 }
 
 .footer-container {
-    row-gap: 3.5rem;
+    row-gap: 1.5rem;
 }
 
 .footer-bg {
-    background-color: #F50057;
-    padding: 2rem 0 1.5rem;
+    background-color: #161616;
 }
 
 .footer-titulo {
@@ -301,11 +330,11 @@ img {
 .footer-social {
     font-size: 2.25rem;
     margin-right: 1.5rem;
-    color: #161616;
+    color: #eee;
 }
 
 .footer-social:hover {
-    color: #fff;
+    color: #F50057;
 }
 
 .footer-social {
@@ -323,6 +352,10 @@ img {
 
 
 @media screen and (max-width: 767px){
+    .botaohome {
+        color: #161616;
+    }
+
     .container {
         margin-left: .75rem;
         margin-right: .75rem;
@@ -385,9 +418,30 @@ img {
         grid-template-columns: repeat(2, 1fr);
      }
 
+     .contato-info {
+        display: grid;
+        grid-template-columns: max-content;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .portfolio-data {
+        display: grid;
+        justify-items: center;
+    }
+
 }
 
 @media screen and (max-width: 350px){
+    .botaohome {
+        color: #161616;
+    }
+
+    .section {
+        padding: 2rem 0 4rem;
+    }
+    
     .nav-menu {
         padding-bottom: 1rem;
     }
@@ -400,9 +454,12 @@ img {
         width: 180px;
     }
 
-    .skills-container {
-        grid-template-columns: max-content;
-        justify-content: center;
+    .sobre {
+        margin-top: 3rem;
+    }
+
+    .sobre-data {
+        text-align: left;
     }
 
     .portfolio-descricao {
@@ -410,11 +467,9 @@ img {
         text-align: center;
     }
 
-    .portfolio-botao {
-        display: flex;
-        justify-content: center;
-        width: 60%;
-        margin: 0 auto;
+    .portfolio-data {
+        display: grid;
+        justify-items: center;
     }
 
     .contato-info {
@@ -434,13 +489,13 @@ img {
         justify-content: center;
     }
 
-    .footer {
-        height: 375px;
-    }
-
 }
 
 @media screen and (min-width: 568px){
+    .botaohome {
+        color: #161616;
+    }
+
     .home-content {
         grid-template-columns: max-content 1fr 1fr;
     }
@@ -461,9 +516,21 @@ img {
     .contato-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .contato-info {
+        display: grid;
+        grid-template-columns: max-content;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 768px) {
+    .botaohome {
+        color: #161616;
+    }
+    
     .container {
         margin-left: auto;
         margin-right: auto;
@@ -473,9 +540,9 @@ img {
         margin: 0;
     }
 
-    .section {
+    /**.section {
         padding: 6rem 0 2rem;
-    }
+    }**/
 
     .section-subtitulo {
         margin-bottom: 4rem;
@@ -525,6 +592,29 @@ img {
         width: 270px;
     }
 
+    .sobre-data {
+        text-align: center;
+    }
+
+    .sobre {
+        height: 80vh;
+        background-color: #161616;
+        display: grid;
+        align-content: center;
+    }
+
+    .skills {
+        height: 100vh;
+        display: grid;
+        align-content: center;
+    }
+
+    .portfolio {
+        height: 80vh;
+        display: grid;
+        align-content: center;
+    }
+
     .portfolio-img {
         width: 320px;
     }
@@ -537,12 +627,14 @@ img {
         text-align: start;
     }
 
+    .contato {
+        height: 80vh;
+        display: grid;
+        align-content: center;
+    }
+
     .footer-container {
         grid-template-columns: repeat(2,1fr);
         align-items: center;
-    }
-
-    .footer-bg {
-        padding: 3rem 0 3.5rem;
     }
 }

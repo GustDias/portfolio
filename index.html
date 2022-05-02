@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!--Unicons-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--css-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
-    <title>Portfólio - Gustavo Dias Cardoso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Desenvolvedor Front-End - Gustavo Dias</title>   
 </head>
+
 <body>
-    <!--NAVEGAÇÃO-->
+    <!--NAVEGAÇÃO 
     <header class="header">
         <nav class="nav container">
             <div class="nav-menu" id="nav-menu">
@@ -22,40 +25,11 @@
                             <i class="uil uil-estate nav-icon">Início</i>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#sobre" class="nav-link">
-                            <i class="uil uil-user nav-icon">Sobre</i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#habilidades" class="nav-link">
-                            <i class="uil uil-file-alt nav-icon">Habilidades</i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">
-                            <i class="uil uil-scenery nav-icon">Portfólio</i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contato" class="nav-link">
-                            <i class="uil uil-message nav-icon">Contato</i>
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav-close" id="nav-close"></i>
-            </div>
-
-            <div class="nav-btn">
-                <div class="nav-toggle" id="nav-toggle">
-                    <i class="uil uil-align-center"></i>
-                </div>
-            </div>
         </nav>
-    </header>
+    </header> -->
 
     <!--HOME-->
-    <section class="home section" id="home">        
+    <section class="home" id="home">        
         <div class="home-container container grid">
             <div class="home-content grid">
                 <div class="home-social">
@@ -86,10 +60,10 @@
                 </div>
 
                  <div class="home-data">
-                    <h1 class="home-titulo">Olá, eu sou o Gustavo</h1>
-                    <h3 class="home-subtitulo">Dev Front-end</h3>
-                    <p class="home-descricao">Estudando para me tornar um desenvolvedor WEB e mobile.</p>
-                    <a href="#contato" class="botao">
+                    <h1 class="home-titulo">Olá, eu sou o Gustavo  😄 </h1>
+                    <h3 class="home-subtitulo">Dev Front-end.</h3>
+                    <p class="home-descricao">24 | Sorocaba | Noivo </p>
+                    <a href="#contato" class="botao botaohome">
                         Me Contrate <i class="uil uil-message botao-icon"></i>
                     </a>
                  </div>
@@ -99,15 +73,15 @@
 
     <!--SOBRE-->
     <section class="sobre section" id="sobre">
-        <h2 class="section-titulo">Sobre Mim</h2>
-        <span class="section-subtitulo">introduçao</span>
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <span class="sobre-subtitulo">introduçao</span>
 
         <div class="sobre-data container ">
             <p class="sobre-descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At modi, quibusdam repellendus pariatur quos porro sunt, libero qui maiores quam obcaecati illum sed placeat illo mollitia distinctio! Nam, maxime voluptate!</p>
         </div>
 
         <div class="sobre-botao">
-            <a download="" href="cv.pdf" class="botao">
+            <a download="" href="cv.pdf" class="botao sobrebotao">
               Baixar Currículo <i class="uil uil-download-alt botao-icon"></i>
             </a>
         </div>
@@ -115,8 +89,8 @@
 
     <!--HABILIDADES-->
     <section class="skills section" id="habilidades">
-        <h2 class="section-titulo">Habilidades</h2>
-        <span class="section-subtitulo">Técnicas</span>
+        <h2 class="section-titulo skills-titulo">Habilidades</h2>
+        <span class="section-subtitulo skills-titulo">Técnicas</span>
 
         <div class="skills-container container grid">
             <div class="skills-content">
@@ -164,7 +138,7 @@
     </section>
 
     <!--PORTFOLIO-->
-    <section class="portfolio section container" id="portfolio">
+    <section class="portfolio section " id="portfolio">
         <h2 class="section-titulo">Portfólio</h2>
         <span class="section-subtitulo">Trabalhos Realizados</span>
 
@@ -172,7 +146,7 @@
             <div class="swiper-wrapper">
                 <!--PORTFOLIO 1-->
                 <div class="portfolio-content grid swiper-slide">
-                    <img class="portfolio-img" src="imgs/portfolio1.jpg" alt="">
+                    <img class="portfolio-img" src="imgs/portfolio1.jpg" alt="" style="cursor: pointer;" width="90" height="90">
                     <div class="portfolio-data">
                         <h3 class="portfolio-titulo">Lorem</h3>
                         <p class="portfolio-descricao">Lorem ipsum dolor sit </p>
@@ -183,7 +157,7 @@
                 </div>
                 <!--PORTFOLIO 2-->
                 <div class="portfolio-content grid swiper-slide">
-                    <img class="portfolio-img" src="imgs/portfolio2.jpg" alt="">
+                    <img class="portfolio-img" src="imgs/portfolio2.jpg" alt="" style="cursor: pointer;">
                     <div class="portfolio-data">
                         <h3 class="portfolio-titulo">Lorem</h3>
                         <p class="portfolio-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto </p>
@@ -194,7 +168,7 @@
                 </div>
                 <!--PORTFOLIO 3-->
                 <div class="portfolio-content grid swiper-slide">
-                    <img class="portfolio-img" src="imgs/portfolio3.jpg" alt="">
+                    <img class="portfolio-img" src="imgs/portfolio3.jpg" alt="" style="cursor: pointer;">
                     <div class="portfolio-data">
                         <h3 class="portfolio-titulo">Lorem</h3>
                         <p class="portfolio-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -213,58 +187,27 @@
 
     <!--CONTATO-->
     <section class="contato section" id="contato">
-        <h2 class="section-titulo">Contato</h2>
-        <span class="section-subtitulo">Contrate-me</span>
+        <h2 class="section-titulo contato-titulo">Contato</h2>
+        <span class="section-subtitulo contato-titulo">Contrate-me</span>
         
-        <div class="contato-container container grid">
+        <div class="contato-container container">
             <div class="contato-content">
                 <div class="contato-info">
                     <i class="uil uil-phone contato-icon"></i>
                     <div>
-                        <h3 class="contato-titulo">Me Ligue</h3>
-                        <span class="contato-subtitulo">(11)99999-9999</span>
+                        <h3 class="contato-titulo">Me mande uma mensagem</h3>
+                        <a href="https://api.whatsapp.com/send?phone=11996720722" target="_blank" class="contato-subtitulo">(11)99672-0722</a>
                     </div>
                 </div>
 
                 <div class="contato-info">
                     <i class="uil uil-envelope contato-icon"></i>
                     <div>
-                        <h3 class="contato-titulo">Email</h3>
-                        <span class="contato-subtitulo">gustavo@gmail.com</span>
-                    </div>
-                </div>
-
-                <div class="contato-info">
-                    <i class="uil uil-map-marker contato-icon"></i>
-                    <div>
-                        <h3 class="contato-titulo">Local</h3>
-                        <span class="contato-subtitulo">Sorocaba - SP</span>
+                        <h3 class="contato-titulo">Me mande um Email</h3>
+                        <a href="mailto:guuh.dias16@gmail.com" target="_blank" class="contato-subtitulo">guuh.dias16@gmail.com</a>
                     </div>
                 </div>
             </div>
-
-            <form action="" class="contato-form grid">
-                <div class="contato-inputs grid">
-                    <div class="contato-content">
-                        <label for="" class="contato-label">Nome</label>
-                        <input type="text" class="contato-input">
-                    </div>
-                    <div class="contato-content">
-                        <label for="" class="contato-label">Email</label>
-                        <input type="email" class="contato-input">
-                    </div>
-                    <div class="contato-content">
-                        <label for="" class="contato-label">Mensagem</label>
-                        <textarea name="" id="" cols="0" rows="5" class="contato-input area"></textarea>
-                    </div>
-
-                    <div>
-                        <a href="#" class="botao contato-botao">
-                            Enviar <i class="uil uil-message botao-icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </form>
         </div>
     </section>
 
@@ -273,10 +216,8 @@
         <div class="footer-bg">
             <div class="footer-container container grid">
                 <div class="footer-content">
-                    <h1 class="footer-titulo">Gustavo</h1>
-                    <span class="footer-subtitulo">Front-end Developer</span>
+                    <span class="footer-subtitulo">Desenvolvido com ❤️ por Gustavo Dias.</span>
                 </div>
-
                 <div class="footer-social">
                     <a href="#" target="_blank" class="footer-social">
                         <i class="uil uil-facebook-f footer-icon"></i>
